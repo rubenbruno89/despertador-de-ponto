@@ -1,0 +1,33 @@
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Despertador Ponto Eletrônico</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>⏰ Despertador do Ponto</h1>
+    <div class="alarm-setup">
+      <div class="time-inputs">
+        <label>Entrada:</label>
+        <input type="time" id="entradaTime" required>
+        
+        <label>Saída Almoço:</label>
+        <input type="time" id="saidaAlmocoTime" required>
+        
+        <label>Retorno Almoço:</label>
+        <input type="time" id="retornoAlmocoTime" required>
+        
+        <label>Saída:</label>
+        <input type="time" id="saidaTime" required>
+      </div>
+      <button id="setAlarm">Ativar Alarmes</button>
+      <button id="stopAlarm" style="display:none;">Parar Alarmes</button>
+    </div>
+    <div id="status" class="status"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
